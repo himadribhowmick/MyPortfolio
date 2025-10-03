@@ -1,0 +1,98 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Google fonts fallback if loaded from index.html */
+:root {
+  --brand: #f28a3a;
+}
+
+/* Smooth scroll anchors */
+html {
+  scroll-behavior: smooth;
+}
+
+/* ---------- GLOBAL LIGHT / DARK THEMES ---------- */
+body {
+  @apply bg-white text-gray-900 transition-colors duration-300; /* light default */
+}
+
+.dark body {
+  @apply bg-gray-900 text-gray-100 transition-colors duration-300; /* dark mode */
+}
+
+/* Profile ring effect & orange top bar */
+.profile-ring {
+  position: relative;
+  display: inline-block;
+  border-radius: 9999px;
+  padding: 6px; /* outer ring width */
+  background: linear-gradient(
+    135deg,
+    rgba(242, 138, 58, 0.15),
+    rgba(242, 138, 58, 0.6)
+  );
+}
+
+.profile-ring img {
+  display: block;
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 9999px;
+  border: 6px solid white;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+}
+
+/* orange rectangle overlay over head (positioned relatively) */
+.profile-overlay {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 10%;
+  width: 160px;
+  height: 38px;
+  background: rgba(242, 138, 58, 0.95);
+  border-radius: 6px;
+  mix-blend-mode: normal;
+  pointer-events: none;
+}
+
+/* progress bars for About */
+.progress-outer {
+  background: #f3f3f3;
+  height: 10px;
+  border-radius: 999px;
+  overflow: hidden;
+}
+.progress-inner {
+  height: 100%;
+  background: linear-gradient(90deg, #f28a3a, #f28a3a);
+  border-radius: 999px;
+}
+
+/* simple testimonial slider styles */
+.testimonial-card {
+  min-width: 100%;
+  transition: transform 400ms ease;
+}
+
+/* small dot styles */
+.small-dot {
+  width: 12px;
+  height: 6px;
+  background: #e7e7e7;
+  border-radius: 9999px;
+  margin: 0 6px;
+}
+.small-dot.active {
+  background: var(--brand);
+}
+
+/* media helper for smaller profile */
+@media (max-width: 768px) {
+  .profile-ring img {
+    width: 200px;
+    height: 200px;
+  }
+}
