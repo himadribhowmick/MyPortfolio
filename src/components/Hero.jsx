@@ -43,8 +43,8 @@ const CustomStyles = () => (
         
         @media (max-width: 900px) {
             .img-badge {
-                top: -40px;
-                left: 40%;
+                top: 30px;
+                left: 45%;
                 transform: translateX(-50%);
             }
             .hero-text-block {

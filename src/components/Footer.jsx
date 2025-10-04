@@ -30,10 +30,10 @@ export default function Footer() {
 
         {/* Social Icons */}
         <div className="flex gap-4 text-gray-700 dark:text-gray-300 text-lg">
-          <a href="#" className="hover:text-orange-500 dark:hover:text-orange-400"><FaFacebookF /></a>
+          <a href="https://www.facebook.com/himadrihimuofficialpage/" className="hover:text-orange-500 dark:hover:text-orange-400"><FaFacebookF /></a>
           <a href="#" className="hover:text-orange-500 dark:hover:text-orange-400"><FaTwitter /></a>
-          <a href="#" className="hover:text-orange-500 dark:hover:text-orange-400"><FaInstagram /></a>
-          <a href="#" className="hover:text-orange-500 dark:hover:text-orange-400"><FaLinkedinIn /></a>
+          <a href="https://www.instagram.com/himadri_himu55/" className="hover:text-orange-500 dark:hover:text-orange-400"><FaInstagram /></a>
+          <a href="https://www.linkedin.com/in/himadri-bhowmick-89b7b525b/" className="hover:text-orange-500 dark:hover:text-orange-400"><FaLinkedinIn /></a>
         </div>
       </div>
 

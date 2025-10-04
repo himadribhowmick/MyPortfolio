@@ -42,7 +42,7 @@ const AboutMeHybridSection = () => {
           
           {/* Orange Badge/Overlay */}
           <div 
-            className="absolute top-[-70px] lg:top-[50px] left-1/2 -translate-x-[60%] w-[200px] h-[40px] bg-orange-500/60 rounded-sm z-50 animate-glow-pulse"
+            className="absolute top-[50px] lg:top-[50px] left-1/2 -translate-x-[60%] w-[200px] h-[40px] bg-orange-500/60 rounded-sm z-50 animate-glow-pulse"
           ></div>
 
           {/* Gradient Border Frame */}
