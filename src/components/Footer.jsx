@@ -8,9 +8,13 @@ export default function Footer() {
       <div className="max-w-6xl mx-auto px-6 md:px-8 py-10 flex flex-col items-center gap-6">
         {/* Logo Text */}
         <a href="#home" className="flex items-center gap-3">
-          {/* HB Logo */}
-          <div className="w-12 h-12 flex items-center justify-center rounded-full bg-orange-500 text-white text-2xl font-extrabold shadow-md hover:scale-110 transition-transform duration-300">
-            HB
+          {/* Logo Image */}
+          <div className="w-12 h-12 flex items-center justify-center rounded-full bg-gray-50 dark:bg-gray-900 overflow-hidden">
+            <img
+              src="/images/favicon.png"
+              alt="Logo"
+              className="w-full h-full object-contain"
+            />
           </div>
           <span className="text-xl font-semibold text-gray-800 dark:text-gray-200">
             Himadri Bhowmick

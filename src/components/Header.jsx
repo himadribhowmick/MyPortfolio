@@ -16,6 +16,15 @@ export default function Header() {
     localStorage.setItem("theme", theme);
   }, [theme]);
 
+  // Lock scroll when mobile menu is open
+  useEffect(() => {
+    if (open) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = '';
+    }
+  }, [open]);
+
   // Scroll to section with offset
   const handleScroll = (id) => {
     const element = document.getElementById(id);
@@ -35,11 +44,15 @@ export default function Header() {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-white/80 dark:bg-gray-900/80 backdrop-blur-md transition-colors duration-300">
       <div className="max-w-6xl mx-auto flex items-center justify-between p-4 md:p-6">
-        
+
         {/* Logo */}
         <a href="#home" className="flex items-center gap-3">
-          <div className="w-10 h-10 flex items-center justify-center rounded-full bg-orange-500 text-white text-lg font-extrabold shadow-md hover:scale-110 transition-transform duration-300">
-            HB
+          <div className="w-14 h-14 flex items-center justify-center rounded-full bg-white dark:bg-gray-900 shadow-md overflow-hidden">
+            <img
+              src="/images/favicon.png"
+              alt="Logo"
+              className="w-full h-full object-contain"
+            />
           </div>
           <span className="text-lg font-semibold text-gray-800 dark:text-gray-200">
             Himadri Bhowmick
@@ -81,6 +94,8 @@ export default function Header() {
         <div className="md:hidden">
           <button
             onClick={() => setOpen((v) => !v)}
+            aria-label="Toggle menu"
+            aria-expanded={open}
             className="p-2 rounded-md text-gray-700 dark:text-gray-200 transition-colors duration-200"
           >
             {open ? <FiX size={22} /> : <FiMenu size={22} />}
