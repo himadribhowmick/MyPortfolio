@@ -37,13 +37,13 @@ export default function Header() {
       <div className="max-w-6xl mx-auto flex items-center justify-between p-4 md:p-6">
         
         {/* Logo */}
-        <a href="#home">
-          <img
-            key={theme}
-            src={theme === "dark" ? "/images/logo.png" : "/images/logo.png"}
-            alt="Logo"
-            className="w-25 h-25 md:w-25 md:h-25 object-contain"
-          />
+        <a href="#home" className="flex items-center gap-3">
+          <div className="w-10 h-10 flex items-center justify-center rounded-full bg-orange-500 text-white text-lg font-extrabold shadow-md hover:scale-110 transition-transform duration-300">
+            HB
+          </div>
+          <span className="text-lg font-semibold text-gray-800 dark:text-gray-200">
+            Himadri Bhowmick
+          </span>
         </a>
 
         {/* Desktop Nav */}

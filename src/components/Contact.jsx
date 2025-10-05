@@ -37,8 +37,9 @@ export default function Contact() {
         Lets Design Together
       </h2>
       <p className="text-lg text-gray-600 mb-10 dark:text-gray-300">
-        Lorem ipsum dolor sit amet consectetur. Tristique amet sed massa nibh
-        lectus netus in. Aliquet donec morbi convallis pretium
+        If you like my work and think I’d be a great fit for your team or
+        project, feel free to email me — I’d love to collaborate and bring your
+        ideas to website!
       </p>
 
       {/* Fixed Card (same in light and dark mode) */}
